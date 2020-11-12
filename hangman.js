@@ -52,6 +52,7 @@ function load() {
                 document.getElementById("word").innerHTML = "The word is " + answerArray.join("");
                 document.getElementById("end").innerHTML = "You won!";
                 document.getElementById("reset").style.visibility = "visible";
+                buttons.style.visibility = "hidden";
                 
             }
         }
@@ -63,6 +64,7 @@ function load() {
             if (count == 6) {
                 document.getElementById("end").innerHTML = "You lost! The word was: " + word;
                 document.getElementById("reset").style.visibility = "visible";
+                buttons.style.visibility = "hidden";
             }
         }
 
